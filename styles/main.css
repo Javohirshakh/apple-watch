@@ -1,0 +1,211 @@
+:root{
+  --headers-color: #000;
+  --small-headers-color: #222;
+  --text-color: #333;
+  --second-text-color: #777;
+  --buttons-bg: #EA625C;
+  --buttons-color: #fff;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+.hidden{
+  display: none;
+}
+header{
+  height: 10vh;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+header .container ul{
+  display: flex;
+  align-items: center;
+}
+header .container ul li{
+  margin: 0 15px;
+}
+header .container ul li a{
+  font-size: 15px;
+  line-height: 150%;
+  color: #333333;
+  transition: 0.4s;
+  padding-bottom: 2px;
+  border-bottom: 3px solid transparent;
+}
+header .container ul li a:hover{
+  border-bottom: 3px solid var(--text-color);
+}
+header .container ul li form input{
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 160px;
+  padding-bottom: 5px;
+  outline: none;
+  color: var(--text-color);
+}
+/* HERO */
+.hero-section{
+  background-image: url('../images/hero-bg.png');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 300px 400px;
+  border-bottom: 2px solid #ddd;
+}
+.hero-section .container{
+  padding-top: 150px;
+}
+.hero-section .container h2{
+  color: var(--headers-color);
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 120%;
+  padding: 0;
+  margin: 0;
+}
+.section-text{
+  border-left: 3px solid var(--second-text-color);
+  padding-left: 40px;
+  margin-top: 30px;
+}
+.section-text p{
+  color: var(--second-text-color);
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+.button{
+  margin-top: 40px;
+  background: var(--buttons-bg);
+  color: var(--buttons-color);
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  cursor: pointer;
+  padding: 12px 38px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.button:hover{
+  background: #C9514C;
+}
+/* TEXTS section */
+
+.texts-section{
+  margin-top: 70px;
+}
+.texts-section .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.texts-section .item{
+  width: 300px;
+}
+.texts-section .item h3{
+  color: var(--small-headers-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+.texts-section .item p{
+  margin-top: 30px;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 160%;
+}
+.item div{
+  display: flex;
+}
+.item div span{
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.more{
+  color: var(--buttons-bg);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.more .hr{
+  width: 30px;
+  height: 2px;
+  background-color: var(--buttons-bg);
+  margin-right: 10px;
+}
+
+/* SHOP section */
+
+.section-shop{
+  margin-top: 150px;
+}
+.section-shop .container{
+  height: 600px;
+  background-image: url(/images/watch-in-hand.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 10px;
+}
+.section-shop h2{
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 120%;
+  color: var(--headers-color);
+}
+
+.runner{
+  margin-top: 70px;
+  background-image: url(/images/runner.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.runner .container{
+  padding-top: 10px;
+  color: #fff;
+}
+.runner .container > div{
+  width: 490px;
+  margin-left: auto;
+}
+.runner h2{
+  margin-top: 200px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 120%;
+}
+.runner p{
+  color: #fff;
+}
+.runner .section-text{
+  border-color: #fff;
+}
